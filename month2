@@ -1,0 +1,856 @@
+Assignment 1: Introduction to HTML
+Deliverable 1: A hand-written document containing summary of key HTML concepts learned. 
+(HTML tags and what they do). The document should be well written and concise like a cheat 
+sheet. The document should be maximum of 2 pages only.
+Here's a concise summary of key HTML concepts and tags for your hand-written document:
+HTML Cheat Sheet
+1. Basic Structure:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Title Here</title>
+</head>
+<body>
+ Content Goes Here
+</body>
+</html>
+```
+2. Text Formatting:
+- `<h1>` to `<h6>`: Headings (largest to smallest)
+- `<p>`: Paragraph
+- `<strong>` or `<b>`: Bold text
+- `<em>` or `<i>`: Italic text
+- `<u>`: Underline text
+- `<br>`: Line break
+- `<hr>`: Horizontal line
+3. Lists:
+- `<ul>`: Unordered list
+ - `<li>`: List item
+- `<ol>`: Ordered list
+ - `<li>`: List item
+4. Links and Images:
+- `<a href="url">Text or Image</a>`: Link
+- `<img src="image-url" alt="description">`: Image
+5. Tables:
+```html
+<table>
+ <tr>
+ <th>Header 1</th>
+ <th>Header 2</th>
+ </tr>
+ <tr>
+ <td>Data 1</td>
+ <td>Data 2</td>
+ </tr>
+</table>
+```
+6. Forms:
+```html
+<form action="submit-url" method="get/post">
+ <input type="text" placeholder="Text Input">
+ <input type="password" placeholder="Password">
+ <input type="submit" value="Submit">
+</form>
+```
+7. Divisions and Spans:
+- `<div>`: Division (block-level)
+- `<span>`: Span (inline)
+8. Semantic Elements:
+- `<header>`, `<footer>`, `<nav>`, `<article>`, `<section>`, `<aside>`
+9. Meta Tags:
+- `<meta charset="utf-8">`: Character set
+- `<meta name="description" content="description">`: Description
+- `<meta name="keywords" content="keyword1, keyword2">`: Keywords
+You can format and organize this information neatly on your hand-written document.
+Deliverable 2: Implementation of a simple HTML project topic i.e., personal portfolio website. 
+(Refer the video resources given above.) The project should be made with ONLY HTML for now.
+Code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Krishna Kumar Pathak - Portfolio</title>
+ <style>
+ /* Add your CSS styles here */
+ body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #f4f4f4;
+ }
+ header {
+ background-color: #333;
+ color: #fff;
+ padding: 10px 0;
+ text-align: center;
+ }
+ nav {
+ background-color: #444;
+ color: #fff;
+ text-align: center;
+ padding: 10px;
+ }
+ nav a {
+ text-decoration: none;
+ margin: 0 10px;
+ }
+ nav a#home { color: red; } /* Home text color */
+ nav a#about { color: green; } /* About text color */
+ nav a#portfolio { color: blue; } /* Portfolio text color */
+ nav a#contact { color: yellow; } /* Contact text color */
+ section {
+ padding: 20px;
+ }
+ 
+ footer {
+ background-color: #333;
+ color: #fff;
+ text-align: center;
+ padding: 10px 0;
+ }
+ </style>
+</head>
+<body>
+ <header>
+ <h1>Krishna Kumar Pathak</h1>
+ <p>SDE Assistant</p>
+ </header>
+ <nav>
+ <a href="#home" id="home">Home</a>
+ <a href="#about" id="about">About</a>
+ <a href="#portfolio" id="portfolio">Portfolio</a>
+ <a href="#contact" id="contact">Contact</a>
+ </nav>
+ <section id="home">
+ <h2>Welcome to My Portfolio</h2>
+ <p>Welcome to my portfolio! It’s such a pleasure to have you here and an honour to introduce 
+my work to you, so thank you for reading! I’ve spent the last seven years, throughout high school and 
+university, creating various pieces of work and building up my portfolio to where it is today; updating 
+my display of projects as my skills have grown and developed.</p>
+ </section>
+ <section id="about">
+ <h2>About Me</h2>
+ <p>My name is Krishna Kumar Pathak, I was born and raised in Buxar, Bihar, and I am 
+currently In Dehradun. I am pursuing a degree in MCA at Graphic Era University.</p>
+ </section>
+ <section id="portfolio">
+ <h2>Portfolio</h2>
+ <div class="project">
+ <h3>Education Information Portal</h3>
+ <ul>
+ <li><strong>Objective:</strong> Performance analysis of HTML & CSS web browsing 
+traffic.</li>
+ <li>Performance analysis will help in comparing different portals based on different 
+networks.</li>
+ <li>Studied various papers related to different portals and now working on improving 
+simulations.</li>
+ </ul>
+ </div>
+ <div class="project">
+ <h3>Notepad & Calculator</h3>
+ <ul>
+ <li><strong>Objective:</strong> Performance analysis of Vb.NET.</li>
+ <li>Performance analysis will help in comparing different others.</li>
+ </ul>
+ </div>
+ <div class="project">
+ <h3>Detecting And Eliminating Fake Reviews in E-commerce</h3>
+ <ul>
+ <li><strong>Objective:</strong> Integrate Real-time Monitoring and Reporting.</li>
+ <li>Ensure Data Privacy and Security.</li>
+ <li>Maintain User Trust and Platform Integrity.</li>
+ </ul>
+ </div>
+ </section>
+ <section id="contact">
+ <h2>Contact Me</h2>
+ <p>Email: ravi70pathak@gmail.com</p>
+ <p>Phone: +91 8709798632</p>
+ </section>
+ <footer>
+ <p>&copy; 2024 Krishna Kumar Pathak - Portfolio</p>
+ </footer>
+</body>
+</html>
+Output:
+Assignment 2: Exploring CSS Styling
+Deliverable 1: A hand-written document containing summary of key CSS styling techniques and 
+how they are implemented. The document should be well written and concise like a cheat sheet. 
+It should be maximum of 2 pages only.
+Here's a concise summary of key CSS styling techniques for your hand-written document:
+CSS Cheat Sheet
+1. Selectors:
+- Element Selector: `element {}`
+- Class Selector: `.class {}`
+- ID Selector: `#id {}`
+- Attribute Selector: `[attribute=value] {}`
+2. Box Model:
+- `margin`, `padding`, `border`, `width`, `height`
+3. Text Styling:
+- `color`, `font-family`, `font-size`, `font-weight`, `text-align`, `text-decoration`
+4. Backgrounds:
+- `background-color`, `background-image`, `background-size`, `background-repeat`
+5. Display and Positioning:
+- `display`: `block`, `inline`, `inline-block`, `none`
+- `position`: `static`, `relative`, `absolute`, `fixed`
+6. Flexbox:
+```css
+.container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+```
+7. Grid Layout:
+```css
+.container {
+ display: grid;
+ grid-template-columns: auto auto auto;
+ grid-gap: 10px;
+}
+```
+8. Transitions and Animations:
+```css
+.element {
+ transition: property duration timing-function;
+ animation: name duration timing-function;
+}
+```
+9. Media Queries:
+```css
+@media screen and (max-width: 600px) {
+ /* Styles for smaller screens */
+}
+```
+10. Pseudo-classes and Pseudo-elements:
+- `:hover`, `:active`, `:focus`, `:nth-child()`, `::before`, `::after`
+11. Units:
+- `px`, `em`, `rem`, `%`, `vw`, `vh`
+12. Comments:
+```css
+/* This is a CSS comment */
+You can arrange these topics neatly on your hand-written document, providing examples and 
+explanations where necessary.
+Deliverable 2: Application of CSS styles to HTML project. (Refer the video resources given 
+above). Make a separate copy of the above HTML project and apply CSS on it. Therefore, you 
+should submit 2 versions of the same project – one made with only HTML and the other made 
+with HTML + CSS.
+Code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Krishna Kumar Pathak - Portfolio</title>
+ <style>
+ /* Add your CSS styles here */
+ body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #f4f4f4;
+ }
+ header {
+ background-color: #333;
+ color: #fff;
+ padding: 10px 0;
+ text-align: center;
+ }
+ nav {
+ background-color: #444;
+ color: #fff;
+ text-align: center;
+ padding: 10px;
+ }
+ nav a {
+ text-decoration: none;
+ margin: 0 10px;
+ }
+ nav a#home { color: red; } /* Home text color */
+ nav a#about { color: green; } /* About text color */
+ nav a#portfolio { color: blue; } /* Portfolio text color */
+ nav a#contact { color: yellow; } /* Contact text color */
+ section {
+ padding: 20px;
+ }
+ 
+ footer {
+ background-color: #333;
+ color: #fff;
+ text-align: center;
+ padding: 10px 0;
+ }
+ </style>
+</head>
+<body>
+ <header>
+ <h1>Krishna Kumar Pathak</h1>
+ <p>SDE Assistant</p>
+ </header>
+ <nav>
+ <a href="#home" id="home">Home</a>
+ <a href="#about" id="about">About</a>
+ <a href="#portfolio" id="portfolio">Portfolio</a>
+ <a href="#contact" id="contact">Contact</a>
+ </nav>
+ <section id="home">
+ <h2>Welcome to My Portfolio</h2>
+ <p>Welcome to my portfolio! It’s such a pleasure to have you here and an honour to introduce my 
+work to you, so thank you for reading! I’ve spent the last seven years, throughout high school and 
+university, creating various pieces of work and building up my portfolio to where it is today; updating 
+my display of projects as my skills have grown and developed.</p>
+ </section>
+ <section id="about">
+ <h2>About Me</h2>
+ <p>My name is Krishna Kumar Pathak, I was born and raised in Buxar, Bihar, and I am currently 
+In Dehradun. I am pursuing a degree in MCA at Graphic Era University.</p>
+ </section>
+ <section id="portfolio">
+ <h2>Portfolio</h2>
+ <div class="project">
+ <h3>Education Information Portal</h3>
+ <ul>
+ <li><strong>Objective:</strong> Performance analysis of HTML & CSS web browsing 
+traffic.</li>
+ <li>Performance analysis will help in comparing different portals based on different 
+networks.</li>
+ <li>Studied various papers related to different portals and now working on improving 
+simulations.</li>
+ </ul>
+ </div>
+ <div class="project">
+ <h3>Notepad & Calculator</h3>
+ <ul>
+ <li><strong>Objective:</strong> Performance analysis of Vb.NET.</li>
+ <li>Performance analysis will help in comparing different others.</li>
+ </ul>
+ </div>
+ <div class="project">
+ <h3>Detecting And Eliminating Fake Reviews in E-commerce</h3>
+ <ul>
+ <li><strong>Objective:</strong> Integrate Real-time Monitoring and Reporting.</li>
+ <li>Ensure Data Privacy and Security.</li>
+ <li>Maintain User Trust and Platform Integrity.</li>
+ </ul>
+ </div>
+ </section>
+ <section id="contact">
+ <h2>Contact Me</h2>
+ <p>Email: ravi70pathak@gmail.com</p>
+ <p>Phone: +91 8709798632</p>
+ </section>
+ <footer>
+ <p>&copy; 2024 Krishna Kumar Pathak - Portfolio</p>
+ </footer>
+</body>
+</html>
+Output:
+
+Assignment 2.1:
+Deliverable 1: A hand-written document containing summary of key JavaScript concepts learned. 
+The document should be well written and concise like a cheat sheet. Maximum of 3 pages only.
+Here's a concise summary of key JavaScript concepts for your cheat sheet:
+JavaScript Cheat Sheet
+1. Variables and Data Types
+- Variables: `let`, `const`, `var`
+- Data Types: `number`, `string`, `boolean`, `null`, `undefined`, `object`, `symbol`
+2. Operators
+- Arithmetic Operators: `+`, `-`, `*`, `/`, `%`
+- Comparison Operators: `==`, `===`, `!=`, `!==`, `>`, `<`, `>=`, `<=`
+- Logical Operators: `&&`, `||`, `!`
+3. Control Flow
+- Conditional Statements:** `if`, `else if`, `else`
+- Switch Statement:** `switch`, `case`, `break`, `default`
+- Loops: `for`, `while`, `do...while`, `for...in`, `for...of`
+4. Functions
+- Function Declaration: `function functionName(parameters) { // code }`
+- Arrow Functions: `(parameters) => { // code }`
+- Function Invocation: `functionName(arguments)`
+5. Arrays
+- Array Creation: `let arrayName = [element1, element2, ...];`
+- Array Methods: `push()`, `pop()`, `shift()`, `unshift()`, `splice()`, `slice()`, `concat()`, 
+`join()`, `indexOf()`, `includes()`, `forEach()`, `map()`, `filter()`, `reduce()`
+6. Objects
+- Object Creation: `let objectName = { key1: value1, key2: value2, ... };`
+- Object Methods: `Object.keys()`, `Object.values()`, `Object.entries()`
+7. DOM Manipulation
+- Selecting Elements: `document.getElementById()`, `document.querySelector()`, 
+`document.querySelectorAll()`
+- Manipulating Elements: `.innerHTML`, `.textContent`, `.setAttribute()`, `.classList`
+8. Events
+- Event Handlers: `element.addEventListener('event', handlerFunction)`
+- Common Events: `click`, `mouseover`, `submit`, `keydown`, `load`
+9. Error Handling
+- Try...Catch: `try { // code } catch (error) { // handle error }`
+10. Asynchronous JavaScript
+- Promises: `new Promise((resolve, reject) => { // async code })`
+- Async/Await:`async function functionName() { // await async code }`
+11. Modules
+- Exporting: `export`, `export default`
+- Importing: `import { module } from 'modulePath'`, `import moduleName from 'modulePath'`
+This cheat sheet covers the fundamental concepts of JavaScript. You can expand on each topic with 
+examples and additional details as needed.
+Deliverable 2: Application of JavaScript to HTML and CSS project: Implementation of a simple 
+JavaScript project (e.g.- form, timetable, calculator, etc.). (Refer the video resources given above).
+Code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Simple Calculator</title>
+ <!-- <link rel="stylesheet" href="styles.css"> -->
+ <style>
+ body {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ background-color: #f0f0f0;
+}
+.calculator {
+ width: 300px;
+ background-color: #ffffff;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ padding: 10px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input[type="text"] {
+ width: calc(100% - 20px);
+ padding: 5px;
+ margin-bottom: 10px;
+}
+.buttons {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 5px;
+}
+button {
+ padding: 10px;
+ border: none;
+ border-radius: 5px;
+ background-color: #007bff;
+ color: #ffffff;
+ cursor: pointer;
+}
+button:hover {
+ background-color: #0056b3;
+}
+ </style>
+</head>
+<body>
+ <div class="calculator">
+ <input type="text" id="result" disabled>
+ <div class="buttons">
+ <button onclick="clearResult()">C</button>
+ <button onclick="appendToResult('7')">7</button>
+ <button onclick="appendToResult('8')">8</button>
+ <button onclick="appendToResult('9')">9</button>
+ <button onclick="appendToResult('+')">+</button>
+ <button onclick="appendToResult('4')">4</button>
+ <button onclick="appendToResult('5')">5</button>
+ <button onclick="appendToResult('6')">6</button>
+ <button onclick="appendToResult('-')">-</button>
+ <button onclick="appendToResult('1')">1</button>
+ <button onclick="appendToResult('2')">2</button>
+ <button onclick="appendToResult('3')">3</button>
+ <button onclick="appendToResult('*')">*</button>
+ <button onclick="appendToResult('0')">0</button>
+ <button onclick="appendToResult('.')">.</button>
+ <button onclick="calculate()">=</button>
+ <button onclick="appendToResult('/')">/</button>
+ </div>
+ </div>
+ <script src="script.js"></script>
+</body>
+<script>
+ let result = document.getElementById('result');
+let expression = '';
+function appendToResult(value) {
+ expression += value;
+ result.value = expression;
+}
+function clearResult() {
+ expression = '';
+ result.value = expression;
+}
+function calculate() {
+ try {
+ let evaluation = eval(expression);
+ if (isNaN(evaluation) || !isFinite(evaluation)) {
+ result.value = 'Error';
+ } else {
+ result.value = evaluation;
+ }
+ expression = '';
+ } catch (error) {
+ result.value = 'Error';
+ expression = '';
+ }
+}
+</script>
+</html>
+Output:
+Assignment 2.2:
+Deliverable 1: A document containing detailed notes on JavaScript features and concepts. The 
+document should be well written and detailed. This will serve as your own reference notes for 
+JavaScript so write it according to your understanding level. It can be handwritten or typed 
+(whatever suits you).
+Here's a detailed set of notes on JavaScript features and concepts:
+JavaScript Basics:
+1. Introduction:
+ - JavaScript is a versatile scripting language used for web development.
+ - It runs on the client side, making web pages interactive and dynamic.
+2. Variables:
+ - Variables store data that can be changed.
+ - Use `var`, `let`, or `const` to declare variables (`let` and `const` are block-scoped).
+ - Example: `let x = 5;`
+3. Data Types:
+ - Primitive types: `number`, `string`, `boolean`, `null`, `undefined`.
+ - Objects: `object`, `array`, `function`, `date`, `RegExp`.
+4. Operators:
+ - Arithmetic: `+`, `-`, `*`, `/`, `%`.
+ - Comparison: `==`, `!=`, `===`, `!==`, `>`, `<`, `>=`, `<=`.
+ - Logical: `&&`, `||`, `!`.
+5. Functions:
+ - Functions are blocks of code that perform tasks.
+ - Declared using `function` keyword or arrow function syntax.
+ - Example:
+ ```javascript
+ function greet(name) {
+ return `Hello, ${name}!`;
+ }
+6. Arrays:
+ - Ordered collections of data.
+ - Accessed by index (zero-based).
+ - Methods like `push`, `pop`, `shift`, `unshift`, `slice`, `splice` for manipulation.
+Advanced JavaScript:
+1. Object-Oriented Programming (OOP):
+ - Objects encapsulate data and behavior.
+ - Constructors and prototypes used for object creation.
+ - Example:
+ ```javascript
+ function Person(name, age) {
+ this.name = name;
+ this.age = age;
+ }
+ Person.prototype.sayHello = function() {
+ return `Hello, my name is ${this.name}.`;
+ };
+ let person1 = new Person('Alice', 30);
+2. ES6 Features:
+ - Arrow functions: `(params) => expression`.
+ - Template literals: `` `Hello, ${name}!` ``.
+ - `let` and `const` for block-scoping.
+ - Destructuring assignment: `{ name, age } = person1`.
+3. Asynchronous JavaScript:
+ - Callbacks, Promises, Async/Await for handling asynchronous operations.
+ - Example using Promise:
+ ```javascript
+ function fetchData() {
+ return new Promise((resolve, reject) => {
+ // Async operation
+ if (success) {
+ resolve(data);
+ } else {
+ reject('Error fetching data');
+ }
+ });
+ }
+ fetchData()
+ .then(data => console.log(data))
+ .catch(error => console.error(error));
+4. DOM Manipulation:
+ - Document Object Model (DOM) allows interaction with HTML elements.
+ - Methods like `getElementById`, `querySelector`, `addEventListener` used.
+ - Example:
+ ```javascript
+ document.getElementById('myButton').addEventListener('click', function() {
+ alert('Button clicked!');
+ });
+5. Error Handling:
+ - Try...catch blocks used for handling errors.
+ - Example:
+ ```javascript
+ try {
+ // Code that may throw an error
+ } catch (error) {
+ console.error(error);
+ }
+ 
+6. Modules and Libraries:
+ - Modules allow organizing code into separate files.
+ - Libraries like jQuery, React, Vue provide additional functionality.
+Feel free to expand on any topic or add more specific details as needed.
+Deliverable 2: Application of JavaScript in the HTML + CSS project. Make a separate copy of 
+the HTML + CSS project made in WEEK1 and apply JavaScript on it. Therefore, you should 
+submit 3 versions of the same project – one made with only HTML, one made with HTML + CSS, 
+and the third made with HTML + CSS+ JavaScript.
+Code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Krishna Kumar Pathak - Portfolio</title>
+ <style>
+ /* Your existing CSS styles */
+ body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #f4f4f4;
+ }
+ header {
+ background-color: #333;
+ color: #fff;
+ padding: 10px 0;
+ text-align: center;
+ }
+ nav {
+ background-color: #444;
+ color: #fff;
+ text-align: center;
+ padding: 10px;
+ }
+ nav a {
+ text-decoration: none;
+ margin: 0 10px;
+ transition: transform 0.3s ease; /* Transition for zoom effect */
+ padding: 5px 10px; /* Add padding to make the links clickable */
+ display: inline-block; /* Display as block to apply transform */
+ }
+ nav a:hover {
+ transform: scale(1.2); /* Zoom in effect on hover */
+ }
+ nav a#home { color: red; } /* Home text color */
+ nav a#about { color: green; } /* About text color */
+ nav a#portfolio { color: blue; } /* Portfolio text color */
+ nav a#contact { color: yellow; } /* Contact text color */
+ section {
+ padding: 20px;
+ }
+ 
+ footer {
+ background-color: #333;
+ color: #fff;
+ text-align: center;
+ padding: 10px 0;
+ }
+ /* CSS for the animated text */
+ #header-text {
+ animation-name: colorChange;
+ animation-duration: 2s;
+ animation-iteration-count: infinite;
+ }
+ @keyframes colorChange {
+ 0% { color: red; }
+ 50% { color: blue; }
+ 100% { color: green; }
+ }
+ </style>
+</head>
+<body>
+ <header>
+ <h1 id="header-text">Krishna Kumar Pathak</h1>
+ <p>SDE Assistant</p>
+ </header>
+ <nav>
+ <a href="#home" id="home">Home</a>
+ <a href="#about" id="about">About</a>
+ <a href="#portfolio" id="portfolio">Portfolio</a>
+ <a href="#contact" id="contact">Contact</a>
+ </nav>
+ <section id="home">
+ <h2>Welcome to My Portfolio</h2>
+ <p>Welcome to my portfolio! It’s such a pleasure to have you here and an honour to introduce 
+my work to you, so thank you for reading! I’ve spent the last seven years, throughout high school and 
+university, creating various pieces of work and building up my portfolio to where it is today; updating 
+my display of projects as my skills have grown and developed.</p>
+ </section>
+ <section id="about">
+ <h2>About Me</h2>
+ <p>My name is Krishna Kumar Pathak, I was born and raised in Buxar, Bihar, and I am 
+currently In Dehradun. I am pursuing a degree in MCA at Graphic Era University.</p>
+ </section>
+ <section id="portfolio">
+ <h2>Portfolio</h2>
+ <div class="project">
+ <h3>Education Information Portal</h3>
+ <ul>
+ <li><strong>Objective:</strong> Performance analysis of HTML & CSS web browsing 
+traffic.</li>
+ <li>Performance analysis will help in comparing different portals based on different 
+networks.</li>
+ <li>Studied various papers related to different portals and now working on improving 
+simulations.</li>
+ </ul>
+ </div>
+ <div class="project">
+ <h3>Notepad & Calculator</h3>
+ <ul>
+ <li><strong>Objective:</strong> Performance analysis of Vb.NET.</li>
+ <li>Performance analysis will help in comparing different others.</li>
+ </ul>
+ </div>
+ <div class="project">
+ <h3>Detecting And Eliminating Fake Reviews in E-commerce</h3>
+ <ul>
+ <li><strong>Objective:</strong> Integrate Real-time Monitoring and Reporting.</li>
+ <li>Ensure Data Privacy and Security.</li>
+ <li>Maintain User Trust and Platform Integrity.</li>
+ </ul>
+ </div>
+ </section>
+ <section id="contact">
+ <h2>Contact Me</h2>
+ <p>Email: ravi70pathak@gmail.com</p>
+ <p>Phone: +91 8709798632</p>
+ </section>
+ <footer>
+ <p>&copy; 2024 Krishna Kumar Pathak - Portfolio</p>
+ </footer>
+ <!-- JavaScript for text animation -->
+ <script>
+ // JavaScript to change text animation
+ function animateHeaderText() {
+ var header = document.getElementById('header-text');
+ header.classList.toggle('animated');
+ }
+ // Call the animation function after a delay
+ setTimeout(animateHeaderText, 1000); // Delay in milliseconds
+ </script>
+</body>
+</html>
+Output:
+And More Effect on text & Paragraph.
+Assignment 3.1 
+Node.js Cheat Sheet: A hand-written document summarizing key concepts of Node.js. The document 
+should be concise, like a cheat sheet, covering essential topics such as event-driven architecture, 
+asynchronous programming, npm, modules, and the CommonJS module system. Maximum of 3 pages 
+only.
+Here's a concise Node.js cheat sheet summarizing key concepts:
+Node.js Cheat Sheet
+Introduction to Node.js
+- Node.js: A runtime environment that allows you to run JavaScript on the server-side.
+- Event-Driven Architecture: Uses events and callbacks to handle I/O operations 
+asynchronously.
+- Asynchronous Programming: Executes non-blocking code, improving performance 
+and scalability.
+NPM (Node Package Manager)
+- npm: Command-line tool for managing Node.js packages and dependencies.
+- npm init: Initializes a new Node.js project and creates a package.json file.
+- npm install [package-name]: Installs a package locally.
+- npm install -g [package-name]: Installs a package globally.
+- package.json: Manifest file that describes the project and its dependencies.
+- npm start: Executes the "start" script defined in package.json.
+Modules and CommonJS
+- Modules: Encapsulated blocks of code that can be reused.
+- CommonJS: Module system used by Node.js for modular development.
+- require(): Imports modules.
+- module.exports: Exports modules for use in other files.
+Core Modules
+- fs: File system module for reading and writing files.
+- http: HTTP module for creating web servers and handling HTTP requests.
+- path: Path module for working with file paths.
+- events: Events module for handling events.
+Creating a Simple HTTP Server
+```javascript
+const http = require('http');
+const server = http.createServer((req, res) => {
+ res.writeHead(200, {'Content-Type': 'text/plain'});
+ res.end('Hello, Node.js!');
+});
+server.listen(3000, 'localhost', () => {
+ console.log('Server running at http://localhost:3000/');
+});
+Asynchronous Programming with Callbacks
+```javascript
+const fs = require('fs');
+fs.readFile('file.txt', 'utf8', (err, data) => {
+ if (err) throw err;
+ console.log(data);
+});
+Using npm Packages
+- Express: Web framework for building APIs and web applications.
+- Mongoose: MongoDB object modeling tool for Node.js.
+- Socket.io: Real-time bidirectional communication library.
+- Axios: HTTP client for making API requests.
+Debugging Node.js Applications
+- console.log(): Prints messages to the console for debugging.
+- Debugger: Built-in debugging tool for Node.js.
+- Node Inspector: Third-party tool for debugging Node.js applications.
+This cheat sheet covers essential Node.js concepts like event-driven architecture, 
+asynchronous programming, npm, modules, and the CommonJS module system in a 
+concise format.
+Assignment 3.2 – Working with Databases (MySQL)
+MySQL Cheat Sheet: A hand-written document summarizing key concepts of Node.js. The document 
+should be concise, like a cheat sheet, covering essential topics such as event-driven architecture, 
+asynchronous programming, npm, modules, and the CommonJS module system. Maximum of 3 pages 
+only.
+here's a concise MySQL cheat sheet summarizing key concepts:
+MySQL Cheat Sheet
+Introduction to MySQL
+- MySQL: An open-source relational database management system (RDBMS) used 
+for storing and managing structured data.
+Database Basics
+- Database: A collection of related data tables.
+- Table: A structured collection of data organized into rows and columns.
+- Column: Represents a specific type of data within a table (e.g., name, age, email).
+- Row: A single record containing data for each column in a table.
+SQL (Structured Query Language)
+- SQL: Language used to communicate with databases.
+- CRUD Operations:
+- CREATE: Creates a new record or table.
+- READ: Retrieves data from a table.
+- UPDATE: Modifies existing records.
+- DELETE: Deletes records from a table.
+- SELECT Statement: Retrieves data from a table.
+ sql
+ SELECT column1, column2 FROM table_name WHERE condition;
+- INSERT INTO Statement: Adds new records to a table.
+ ```sql
+ INSERT INTO table_name (column1, column2) VALUES (value1, value2);
+ ```
+- UPDATE Statement: Modifies existing records in a table.
+ ```sql
+ UPDATE table_name SET column1 = value1 WHERE condition;
+ ```
+- DELETE Statement: Removes records from a table.
+ ```sql
+ DELETE FROM table_name WHERE condition;
+ ```
+Data Types
+- Numeric: INT, FLOAT, DOUBLE.
+- String: VARCHAR, CHAR.
+- Date and Time: DATE, TIME, DATETIME.
+- Boolean: BOOLEAN, TINYINT.
+Joins
+- Inner Join: Retrieves records with matching values in both tables.
+- Left Join: Retrieves all records from the left table and matching records from the 
+right table.
+- Right Join: Retrieves all records from the right table and matching records from the 
+left table.
+Indexing
+- Index: Improves query performance by speeding up data retrieval.
+- Primary Key: Uniquely identifies each record in a table.
+- Foreign Key: Links two tables together based on a key field.
+Transactions
+- Transaction: A sequence of operations performed as a single unit of work.
+- ACID Properties:
+- Atomicity: All or nothing.
+- Consistency: Database remains in a consistent state.
+- Isolation: Transactions are isolated from each other.
+- Durability: Changes are permanent and survive system failures.
+Backup and Restore
+- Backup: Creating a copy of the database for data protection.
+- Restore: Reverting the database to a previous state using a backup.
+Security
+- User Management: Creating and managing user accounts with specific privileges.
+- Permissions: Controlling access to databases, tables, and columns.
+This cheat sheet covers essential MySQL concepts such as database basics, SQL 
+operations, data types, joins, indexing, transactions, backup and restore, and 
+security in a concise format.
